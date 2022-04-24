@@ -18,6 +18,11 @@ The hit points advancement keeps track of hit point values for each level of a c
 Scale values are formula values that change arbitrarily depending on the level of the class or subclass to which they belong. These values are then made available to be used in roll formulas or elsewhere in the system. A few examples of this include a Bard's inspiration die size, a Rogue's sneak attack value, or a Cleric's channel divinity uses.
 
 
+## Advancement Hooks
+
+Details of the hooks that the advancement system provides can be found on [the hooks page](Hooks#advancement).
+
+
 ## Custom Advancement Types
 
 For module authors who want to expand beyond the advancement types offered in the system, it is a simple task to create and register custom advancement types.
