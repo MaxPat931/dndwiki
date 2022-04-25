@@ -4,7 +4,7 @@ The advancement system is a new system in 5e that allows classes, subclasses, an
 
 #### Disabling Advancements
 
-The advancement system can be disabled for all player in a world by using the `"Disable level-up automation"` option in the 5e system settings. To avoid running advancements on an individual character, any advancements should be removed from the class, subclass, or background before it is dropped on the character sheet.
+The advancement system can be disabled for all players in a world by using the `"Disable level-up automation"` option in the 5e system settings. To avoid running advancements on an individual character, any advancements should be removed from the class, subclass, or background before it is dropped on the character sheet.
 
 
 ## Advancement Types
@@ -33,7 +33,7 @@ For module authors who want to expand beyond the advancement types offered in th
 
 #### `Advancement` Class
 
-All custom types should be a subclass of the abstract `Advancement` type. This class contains all of the base configuration of the advancement, details on its data structure, and methods for displaying it within the advancement list on items and performing changes to the actor when the advancement is applied.
+All custom types should subclass the abstract `Advancement` type. This class contains all of the base configuration of the advancement, details on its data structure, and methods for displaying it within the advancement list on items and performing changes to the actor when the advancement is applied.
 
 #### `AdvancementConfig` Class
 
@@ -62,6 +62,8 @@ Hooks.once("init", () => {
   game.dnd5e.advancement.types.MyModuleCustomAdvancement = MyModuleCustomAdvancement;
 });
 ```
+
+Advancements are looked up by their type. For example, an advancement of type 'MyModuleCustom' will be loaded by the `MyModuleCustomAdvancement` class, if it can be found.
 
 Advancement registration should be done during a module's `"init"` or `"setup"` hooks to ensure that the custom type is available during item preparation.
 
