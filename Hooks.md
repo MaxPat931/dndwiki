@@ -1,3 +1,5 @@
+![Up to date as of 1.6.0](https://img.shields.io/static/v1?label=dnd5e&message=1.6.0&color=informational)
+
 ## Actor
 
 ### `dnd5e.restCompleted`
@@ -37,3 +39,15 @@ Fires when an `AdvancementManager` is done modifying an actor.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | advancementManager | AdvancementManager | The advancement manager that just completed. |
+
+### Document Modification Context
+
+All of the normal 'pre' and 'post' hook events for document modification when an advancement manager flow finishes (Actor Update, Item Creation, Item Update, and Item Deletion) have a custom flag on them: `isAdvancement`. This allows a hook listener to react differently to advancement-created hook events vs normal ones.
+
+```js
+Hooks.on('updateActor', (actor, change, options) => {
+  if ( options.isAdvancement ) {
+    // do something special
+  }
+})
+```
