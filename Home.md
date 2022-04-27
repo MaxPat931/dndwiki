@@ -1,2 +1,4 @@
-- [Advancement](Advancement)
+- [Advancement Overview](Advancement)
+  - [Advancement User Guide](AdvancementUserGuide)
+  - [Custom Class Example](AdvancementCustomClass)
 - [Hooks](Hooks)
