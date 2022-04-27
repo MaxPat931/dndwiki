@@ -1,4 +1,4 @@
 - [Advancement Overview](Advancement)
-  - [Advancement User Guide](AdvancementUserGuide)
+  - [Advancement User Guide](Advancement/User-Guide)
   - [Custom Class Example](Advancement/Custom-Class-Example)
 - [Hooks](Hooks)
