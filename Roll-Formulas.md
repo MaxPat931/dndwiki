@@ -28,7 +28,7 @@
 
 `@abilities.*.checkBonus` - Flat ability check bonus, combining ability-specific bonuses with global check bonuses
 
-`@abilities.*.checkProf` - Ability check proficiency details
+`@abilities.*.checkProf` - Ability check [proficiency](Roll-Formulas#proficiency) details
 
 `@abilities.*.save` - Flat ability save modifier (without any dice bonuses)
 
@@ -36,7 +36,7 @@
 
 `@abilities.*.saveBonus` - Flat ability save bonus, combining ability-specific bonuses with global save bonuses
 
-`@abilities.*.saveProf` - Ability save proficiency details
+`@abilities.*.saveProf` - Ability save [proficiency](Roll-Formulas#proficiency) details
 
 
 ### Attributes
@@ -89,15 +89,15 @@
 
 #### Initiative
 
-`@attributes.init.mod` - 
+`@attributes.init.mod` - Actor's dexterity modifier
 
-`@attributes.init.prof` - 
+`@attributes.init.prof` - Initiative [proficiency](Roll-Formulas#proficiency) details
 
-`@attributes.init.value` - Flat initiative modifier
+`@attributes.init.value` - User-entered initiative bonus
 
 `@attributes.init.bonus` - Total initiative bonus combining `value` and alert flag
 
-`@attributes.init.total` - 
+`@attributes.init.total` - Final initiative modifier
 
 
 #### Movement
@@ -286,7 +286,7 @@
 
 `@skills.*.mod` - Ability modifier from the default ability
 
-`@skills.*.prof` - Skill proficiency details
+`@skills.*.prof` - Skill [proficiency](Roll-Formulas#proficiency) details
 
 `@skills.*.bonuses.check` - Bonus formula for this skill's modifier
 
