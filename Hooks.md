@@ -1,4 +1,4 @@
-![Up to date as of 1.6.0](https://img.shields.io/static/v1?label=dnd5e&message=1.6.0&color=informational)
+![Up to date as of 1.6.1](https://img.shields.io/static/v1?label=dnd5e&message=1.6.1&color=informational)
 
 ## Actor
 
