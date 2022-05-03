@@ -9,7 +9,7 @@ Note that once the Advancement process has been started, any manual changes to t
 # Class Item Updates
 The following section will discuss changes made to the Class item type.
 ## The Details tab
-- **Identifier field**: this will allow you to configure the name of the class that can be used to reference it in roll formulas (useful for classes with spaces, or localizing the class to other languages).
+- **Identifier field**: this will allow you to configure the name of the class that can be used to reference it in roll formulas (useful for classes with spaces, or localizing the class to other languages). The class identifier may only contain letters, numbers, hyphens (`-`), and underscores (`_`).
 - **Level field**: has been removed, class levels will be managed from the actor sheet, see the second screenshot below.
 
 ![Class Details](uploads/bad8b941e33d4723888320099d64dc44/image.png)
