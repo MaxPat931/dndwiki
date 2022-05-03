@@ -32,6 +32,16 @@ Fires when an `AdvancementManager` is about to be processed. Returning `false` w
 | ---- | ---- | ----------- |
 | advancementManager | AdvancementManager | The advancement manager about to be rendered. |
 
+### `dnd5e.preAdvancementManagerComplete`
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| advancementManager | AdvancementManager | The advancement manager. |
+| actorUpdates | object | Updates to the actor. |
+| toCreate | object[] | Items that will be created on the actor. |
+| toUpdate | object[] | Items that will be updated on the actor. |
+| toDelete | string[] | IDs of items that will be deleted on the actor. |
+
 ### `dnd5e.advancementManagerComplete`
 
 Fires when an `AdvancementManager` is done modifying an actor.
