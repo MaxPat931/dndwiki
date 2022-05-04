@@ -2,6 +2,19 @@
 
 ## Actor
 
+### `dnd5e.preRollClassHitPoints`
+
+Fires before hit points are rolled for a character's class.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | Actor for which the hit points are being rolled. |
+| item | Item5e | The class item whose hit dice will be rolled. |
+| object | rollData |  |
+| string | rollData.formula | The string formula to parse. |
+| object | rollData.data | The data object against which to parse attributes within the formula. |
+| object | messageData | The data object to use when creating the message. |
+
 ### `dnd5e.restCompleted`
 
 Fires when the actor completes a short or long rest.
