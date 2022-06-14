@@ -2,4 +2,4 @@
   - [Advancement User Guide](Advancement/User-Guide)
   - [Custom Class Example](Advancement/Custom-Class-Example)
 - [Hooks](Hooks)
-- [Roll Formulas](Roll Formulas)
+- [Roll Formulas](Roll-Formulas)
