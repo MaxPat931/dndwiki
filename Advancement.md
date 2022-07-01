@@ -48,10 +48,11 @@ The `order` value in the `Advancement#metadata` object determines in which order
 
 * `10` - Hit Points
 * `20` - Ability Score Improvement *(in progress)*
-* `30` - Subclass *(in progress)*
+* `30` - Traits *(in progress)*
 * `40` - Grant Items
 * `50` - Item Choice *(in progress)*
 * `60` - Scale Value
+* `70` - Subclass *(in progress)*
 * `100` - (base advancement class)
 
 You can set your ordering value between any of these numbers to position your advancement in the list.
