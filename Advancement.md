@@ -1,4 +1,4 @@
-![Up to date as of 1.6.0](https://img.shields.io/static/v1?label=dnd5e&message=1.6.0&color=informational)
+![Up to date as of 1.6.3](https://img.shields.io/static/v1?label=dnd5e&message=1.6.3&color=informational)
 
 ## Advancement System
 
@@ -41,6 +41,20 @@ For module authors who want to expand beyond the advancement types offered in th
 #### `Advancement` Class
 
 All custom types should subclass the abstract `Advancement` type. This class contains all of the base configuration of the advancement, details on its data structure, and methods for displaying it within the advancement list on items and performing changes to the actor when the advancement is applied.
+
+##### Ordering
+
+The `order` value in the `Advancement#metadata` object determines in which order this advancement type appears. Here are the values for built-in types:
+
+* `10` - Hit Points
+* `20` - Ability Score Improvement *(in progress)*
+* `30` - Subclass *(in progress)*
+* `40` - Grant Items
+* `50` - Item Choice *(in progress)*
+* `60` - Scale Value
+* `100` - (base advancement class)
+
+You can set your ordering value between any of these numbers to position your advancement in the list.
 
 #### `AdvancementConfig` Class
 
