@@ -1,5 +1,5 @@
 - [Advancement Overview](Advancement)
-  - [Advancement User Guide](Advancement/User-Guide)
-  - [Custom Class Example](Advancement/Custom-Class-Example)
+  - [Advancement User Guide](User-Guide)
+  - [Custom Class Example](Custom-Class-Example)
 - [Hooks](Hooks)
 - [Roll Formulas](Roll-Formulas)
