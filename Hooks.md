@@ -90,7 +90,7 @@ Fires before a hit die is rolled. Returning `false` will prevent the normal roll
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | actor | Actor5e | Actor for which the hit die is to be rolled. |
-| config | D20RollConfiguration | Configuration data for the pending roll. |
+| config | DamageRollConfiguration | Configuration data for the pending roll. |
 | denomination | string | Size of hit die to be rolled. |
 
 ### `dnd5e.rollHitDie`
@@ -100,7 +100,7 @@ Fires after a hit die has been rolled, but before updates have been applied. Ret
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | actor | Actor5e | Actor for which the hit die has been rolled. |
-| roll | D20Roll | The resulting roll. |
+| roll | DamageRoll | The resulting roll. |
 | updates | object |  |
 | updates.actor | object | Updates that will be applied to the actor. |
 | updates.class | object | Updates that will be applied to the class. |
