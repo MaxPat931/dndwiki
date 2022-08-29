@@ -204,3 +204,165 @@ Hooks.on('updateActor', (actor, change, options) => {
   }
 })
 ```
+
+## Item
+
+### `dnd5e.preUseItem`
+
+Fires before an item usage is configured. Returning `false` will prevent item from being used.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item being used. |
+| config | ItemUseConfiguration | Configuration data for the item usage being prepared. |
+| options | ItemUseOptions | Additional options used for configuring item usage. |
+
+### `dnd5e.preItemUsageConsumption`
+
+Fires before an item's resource consumption has been calculated. Returning `false` will prevent item from being used.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item being used. |
+| config | ItemUseConfiguration | Configuration data for the item usage being prepared. |
+| options | ItemUseOptions | Additional options used for configuring item usage. |
+
+### `dnd5e.itemUsageConsumption`
+
+Fires after an item's resource consumption has been calculated but before any changes have been made. Returning `false` will prevent item from being used.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item being used. |
+| config | ItemUseConfiguration | Configuration data for the item usage being prepared. |
+| options | ItemUseOptions | Additional options used for configuring item usage. |
+| usage | object |  |
+| usage.actorUpdates | object | Updates that will be applied to the actor. |
+| usage.itemUpdates | object | Updates that will be applied to the item being used. |
+| usage.resourceUpdates | object[] | Updates that will be applied to other items on the actor. |
+
+### `dnd5e.preDisplayCard`
+
+Fires before an item chat card is created.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the chat card is being displayed. |
+| chatData | object | Data used to create the chat message. |
+| options | ItemUseOptions | Options which configure the display of the item chat card. |
+
+### `dnd5e.displayCard`
+
+Fires after an item chat card is created.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the chat card is being displayed. |
+| card | ChatMessage\|object | The created ChatMessage instance or ChatMessageData depending on whether options.createMessage was set to `true`. |
+
+### `dnd5e.useItem`
+
+Fires when an item is used, after the measured template has been created if one is needed.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item being used. |
+| config | ItemUseConfiguration | Configuration data for the roll. |
+| options | ItemUseOptions | Additional options for configuring item usage. |
+
+### `dnd5e.preRollAttack`
+
+Fires before an attack is rolled for an Item. Returning `false` will prevent the attack from being rolled.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll is being performed. |
+| config | D20RollConfiguration | Configuration data for the pending roll. |
+
+### `dnd5e.rollAttack`
+
+Fires after an attack has been rolled for an Item.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll was performed. |
+| roll | D20Roll | The resulting roll. |
+
+### `dnd5e.preRollDamage`
+
+Fires before a damage is rolled for an Item.  Returning `false` will prevent the damage from being rolled.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll is being performed. |
+| config | DamageRollConfiguration | Configuration data for the pending roll. |
+
+### `dnd5e.rollDamage`
+
+Fires after a damage has been rolled for an Item.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll was performed. |
+| roll | DamageRoll | The resulting roll. |
+
+### `dnd5e.preRollFormula`
+
+Fires before the other formula is rolled for an Item. Returning `false` will prevent the formula from being rolled.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll is being performed. |
+| config | object | Configuration data for the pending roll. |
+| config.formula | string | Formula that will be rolled. |
+| config.data | object | Data used when evaluating the roll. |
+| config.chatMessage | boolean | Should a chat message be created for this roll? |
+
+### `dnd5e.rollFormula`
+
+Fires after the other formula has been rolled for an Item.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll was performed. |
+| roll | Roll | The resulting roll. |
+
+### `dnd5e.preRollRecharge`
+
+Fires before the Item is rolled to recharge. Returning `false` will prevent the recharge from being rolled.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll is being performed. |
+| config | object | Configuration data for the pending roll. |
+| config.formula | string | Formula that will be used to roll the recharge. |
+| config.data | object | Data used when evaluating the roll.|
+| config.target | number | Total required to be considered recharged. |
+| config.chatMessage | boolean | Should a chat message be created for this roll? |
+
+### `dnd5e.rollRecharge`
+
+Fires after the Item has rolled to recharge, but before any changes have been performed. Returning `false` will prevent the changes from being performed.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll was performed. |
+| roll | Roll | The resulting roll. |
+
+### `dnd5e.preRollToolCheck`
+
+Fires before a tool check is rolled for an Item. Returning `false` will prevent the tool check from being rolled.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll is being performed. |
+| config | D20RollConfiguration | Configuration data for the pending roll. |
+
+### `dnd5e.rollToolCheck`
+
+Fires after a tool check has been rolled for an Item.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | Item for which the roll was performed. |
+| roll | D20Roll | The resulting roll. |
