@@ -1,4 +1,4 @@
-![Up to date as of 2.0.0](https://img.shields.io/static/v1?label=dnd5e&message=2.0.0&color=informational)
+![Up to date as of 2.0.3](https://img.shields.io/static/v1?label=dnd5e&message=2.0.3&color=informational)
 
 ## Actor
 
@@ -366,3 +366,15 @@ Fires after a tool check has been rolled for an Item.
 | ---- | ---- | ----------- |
 | item | Item5e | Item for which the roll was performed. |
 | roll | D20Roll | The resulting roll. |
+
+## Item Sheet
+
+### `dnd5e.dropItemSheetData`
+
+Fires when some useful data is dropped onto an `ItemSheet5e`. Returning `false` will prevent the normal drop handling.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| item | Item5e | The Item5e. |
+| sheet | ItemShee5e | The ItemSheet5e application. |
+| data | object | The data that has been dropped onto the sheet. |
