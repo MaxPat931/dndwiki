@@ -24,6 +24,14 @@ The [[hit points advancement|Advancement-Type:-Hit-Points]] keeps track of hit p
 ### Scale Value *(class or subclass only)*
 [[Scale values|Advancement-Type:-Scale-Value]] are formula values that change arbitrarily depending on the level of the class or subclass to which they belong. These values are then made available to be used in roll formulas or elsewhere in the system. A few examples of this include a Bard's inspiration die size, a Rogue's sneak attack value, or a Cleric's channel divinity uses.
 
+### Proposed Types
+These advancement types are still under development, links point to the proposal pages for each type:
+- [Ability Score Improvement](https://github.com/foundryvtt/dnd5e/issues/1403)
+- [Choose Items](https://github.com/foundryvtt/dnd5e/issues/1401)
+- [Equipment](https://github.com/foundryvtt/dnd5e/issues/1871)
+- [Subclass](https://github.com/foundryvtt/dnd5e/issues/1407)
+- [Trait](https://github.com/foundryvtt/dnd5e/issues/1405)
+
 
 ## Advancement Hooks
 
