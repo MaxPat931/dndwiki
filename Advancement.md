@@ -19,7 +19,7 @@ The advancement system can be disabled for all players in a world by using the `
 The grant items advancement defines a list of features, spells, or other items that are added to the actor at a certain level.
 
 ### Hit Points *(class only)*
-The hit points advancement keeps track of hit point values for each level of a class. The player will have an option for rolling their hit points or taking the average value.
+The [[hit points advancement|Advancement-Type:-Hit-Points]] keeps track of hit point values for each level of a class. The player will have an option for rolling their hit points or taking the average value.
 
 ### Scale Value *(class or subclass only)*
 Scale values are formula values that change arbitrarily depending on the level of the class or subclass to which they belong. These values are then made available to be used in roll formulas or elsewhere in the system. A few examples of this include a Bard's inspiration die size, a Rogue's sneak attack value, or a Cleric's channel divinity uses.
