@@ -1,5 +1,8 @@
 - [Advancement Overview](Advancement)
   - [Advancement User Guide](User-Guide)
   - [Custom Class Example](Custom-Class-Example)
+  - [[Grant Item Advancement|Advancement-Type:-Grant-Item]]
+  - [[Hit Points Advancement|Advancement-Type:-Hit-Points]]
+  - [[Scale Value Advancement|Advancement-Type:-Scale-Value]]
 - [Hooks](Hooks)
 - [Roll Formulas](Roll-Formulas)
