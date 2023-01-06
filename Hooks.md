@@ -118,6 +118,24 @@ Fires before hit points are rolled for a character's class.
 | rollData.data | object | The data object against which to parse attributes within the formula. |
 | messageData | object | The data object to use when creating the message. |
 
+### `dnd5e.preRollInitiative`
+
+Fires before initiative is rolled for an Actor.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | The Actor that is rolling initiative. |
+| roll | D20Roll | The pre-evaluated roll. |
+
+### `dnd5e.rollInitiative`
+
+Fires after an Actor has rolled for initiative.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | The Actor that rolled initiative. |
+| combatants | Combatant[] | The associated Combatants whose initiative was updated. |
+
 ### `dnd5e.preShortRest`
 
 Fires before a short rest is started. Returning `false` will prevent the rest from being performed.
