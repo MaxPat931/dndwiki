@@ -118,6 +118,36 @@ Fires before hit points are rolled for a character's class.
 | rollData.data | object | The data object against which to parse attributes within the formula. |
 | messageData | object | The data object to use when creating the message. |
 
+### `dnd5e.rollClasshitPoints`
+
+Fires after hit points haven been rolled for a character's class.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | Actor for which the hit points have been rolled. |
+| roll | Roll | The resulting roll. |
+
+### `dnd5e.preRollNPCHitPoints`
+
+Fires before hit points are rolled for an NPC.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | Actor for which the hit points are being rolled. |
+| rollData | object |  |
+| rollData.formula | string | The string formula to parse. |
+| rollData.data | object | The data object against which to parse attributes within the formula. |
+| messageData | object | The data object to use when creating the message. |
+
+### `dnd5e.rollNPChitPoints`
+
+Fires after hit points are rolled for an NPC.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| actor | Actor5e | Actor for which the hit points have been rolled. |
+| roll | Roll | The resulting roll. |
+
 ### `dnd5e.preRollInitiative`
 
 Fires before initiative is rolled for an Actor.
