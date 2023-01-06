@@ -4,5 +4,6 @@
   - [[Grant Item Advancement|Advancement-Type:-Grant-Item]]
   - [[Hit Points Advancement|Advancement-Type:-Hit-Points]]
   - [[Scale Value Advancement|Advancement-Type:-Scale-Value]]
+- [Dynamic Module Art](Dynamic-Module-Art)
 - [Hooks](Hooks)
 - [Roll Formulas](Roll-Formulas)
