@@ -1,4 +1,4 @@
-![Up to date as of 1.6.0](https://img.shields.io/static/v1?label=dnd5e&message=1.6.0&color=informational)
+![Up to date as of 2.1.2](https://img.shields.io/static/v1?label=dnd5e&message=2.1.2&color=informational)
 
 ## Actor Properties
 
@@ -89,16 +89,13 @@
 
 #### Initiative
 
-`@attributes.init.mod` - Actor's dexterity modifier
+`@attributes.init.mod` - Actor's base initiative modifier
 
 `@attributes.init.prof` - Initiative [proficiency](Roll-Formulas#proficiency) details
 
-`@attributes.init.value` - User-entered initiative bonus
-
-`@attributes.init.bonus` - Total initiative bonus combining `value` and alert flag
+`@attributes.init.bonus` - Any extra arbitrary bonus (active effects or the initiative config window)
 
 `@attributes.init.total` - Final initiative modifier
-
 
 #### Movement
 
@@ -146,6 +143,7 @@
 
 `@attributes.spelldc` - Spell save DC based on the selected spellcasting ability
 
+`@attributes.spellmod` - Base ability modifier for the actor's selected spellcasting ability
 
 ### Bonuses
 
