@@ -8,7 +8,7 @@ Modules that wish to provide portrait and/or token art for creatures in compendi
 {
   "flags": {
     "moduleId": {
-      "dnd5e-art": "map-dnd5e.json",
+      "dnd5e-art": "modules/moduleId/map-dnd5e.json",
       "dnd5e-art-credit": "<em>Creature Artwork by Foo Bar.</em>"
     }
   }
